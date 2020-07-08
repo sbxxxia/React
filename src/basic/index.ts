@@ -1,6 +1,9 @@
 import hello, {bye, birthday, add} from "./hello";
+import jsTypes, {tsTypes, symbolType, tupleType} from "./jsTypes";
+import operator, {destructure, spread} from "./operator";
+import loop from "./loop";
 
-let menu: number = 2
+let menu: number = 5
 let name,profile: string = ""
 switch (menu) {
     case 0:
@@ -21,6 +24,23 @@ switch (menu) {
         let num2:number = 30
         let addResult:number = add(num1,num2)
         console.log(`덧셈 결과: ${addResult}`)
+        break
+
+    case 3: //자바스크립트 타입 출력
+        //jsTypes()
+        //tsTypes()
+        //symbolType()
+        tupleType()
+        break
+
+    case 4:
+        operator()
+        //destructure()
+        break
+
+    case 5:
+        //spread()
+        loop()
         break
 
     default:
