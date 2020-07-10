@@ -1,8 +1,10 @@
 import React, {Component} from "react";
+import {Navigator} from "../../components";
 
-export default class HomePage extends Component<any, any>{
+export default class Home extends Component<any, any>{
     public render() {
         return <div>
+            <Navigator/>
             <div id="Layout">
                 <div id="Sidebar">
                     <div id="SidebarTitle">폴더</div>

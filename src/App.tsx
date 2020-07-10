@@ -1,12 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Home, MyChatBot } from './components';
+import { MyChatBot } from './components';
 import './App.css';
-import {Clock, Counter, Hello, Kitty} from './oop';
+import {Clock, Counter, Hello, Kitty} from './components/oop';
+import Home from "./pages/home/Home";
 
 class App extends React.Component<any, any>{
   public render(){
-    return  <Router>
+    const wrapperStyle= {
+      height: "500px"
+    }
+
+    return  <div style={wrapperStyle}>
+    <Router>
       <Link to="/">홈으로 이동</Link> <br/>
       <Link to="/chat">챗봇 이동</Link> <br/>
       <Link to="/counter">카운터</Link> <br/>
@@ -24,6 +30,7 @@ class App extends React.Component<any, any>{
       <Route exact path='/clock' component={Clock}/>
       <Route exact path='/kitty' component={Kitty}/>
     </Router>
+    </div>
   }
 }
 
