@@ -1,2 +1,7 @@
-export { default as MyChatBot } from './MyChatBot'
+export { default as Home } from '../pages/home/Home'
 export { default as Navigator } from './common/Navigator'
+export { default as MyChatBot } from './oop/MyChatBot'
+export { default as Clock } from './oop/Clock'
+export { default as Counter } from './oop/Counter'
+export { default as Hello } from './oop/Hello'
+export { default as Kitty } from './oop/Kitty'
