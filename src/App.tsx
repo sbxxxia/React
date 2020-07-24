@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import {Clock, AdvancedCounter, Hello, Kitty, MyChatBot, Navigator} from './components';
+import {Clock, AdvancedCounter, Hello, Kitty, MyChatBot, Navigator} from './_components';
 import {Provider} from 'react-redux';
 import {ConnectedRouter} from 'connected-react-router';
-//import {Home} from "./pages";
+//import {Home} from "./progress";
 import './App.css';
 
 class App extends Component<any, any>{
